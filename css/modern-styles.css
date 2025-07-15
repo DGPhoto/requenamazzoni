@@ -473,6 +473,7 @@ ul, ol {
     color: var(--color-accent);
 }
 
+
 /* Hero Section */
 .hero-section {
     min-height: 600px;
@@ -486,7 +487,7 @@ ul, ol {
     text-align: center;
     color: var(--color-white);
     position: relative;
-    margin-top: 140px; /* Account for fixed header */
+    margin-top: 140px;
 }
 
 .hero-section::before {
@@ -496,12 +497,8 @@ ul, ol {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.6), rgba(52, 73, 94, 0.4));
+    background: rgba(44, 62, 80, 0.3);
     z-index: 1;
-}
-
-.hero-section::after {
-    display: none;
 }
 
 .hero-content {
@@ -509,28 +506,21 @@ ul, ol {
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+    color: var(--color-white) !important;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--color-white);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--color-white) !important;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
+    color: var(--color-white) !important;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+.hero-section::after {
+    display: none;
 }
+
 
 /* Services Overview */
 .services-overview {
